@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  PZH_WEIXIN
+//
+//  Created by administrator on 2020/3/14.
+//  Copyright © 2020 administrator. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//全局宏
+#import "UtilMacros.h"
+#import "SettingMacros.h"
+#import "GlobalMacros.h"
+
+//基础类
+#import "AppDelegate.h"
+#import "AppDelegate+AppService.h"
+#import "AppManager.h"
+#import "MBProgressHUD+PZH.h"
+#import "ToolUtils.h"
+#import "SYHttp.h"
+
+
+//第三方
+#import <YYKit.h>
+#import <Masonry.h>
+#import "MBProgressHUD.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#endif /* PrefixHeader_pch */

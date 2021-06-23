@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="avatarImg" destination="jSj-Sv-44f" id="HKR-uj-xQ5"/>
+                <outlet property="loginBtn" destination="Spo-1w-E7z" id="9vL-Iw-hNX"/>
+                <outlet property="nameLabel" destination="4df-P9-Npz" id="0Tj-io-Vky"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spo-1w-E7z">
+                    <rect key="frame" x="57" y="306" width="300" height="50"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="9kt-BB-7Ui"/>
+                        <constraint firstAttribute="width" constant="300" id="gFe-QX-xzL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jSj-Sv-44f">
+                    <rect key="frame" x="157" y="124" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="XEH-Mh-YLW"/>
+                        <constraint firstAttribute="height" constant="100" id="lKb-IR-XLa"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pzh_702" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4df-P9-Npz">
+                    <rect key="frame" x="172.5" y="249" width="69" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4df-P9-Npz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0nV-sg-aed"/>
+                <constraint firstItem="Spo-1w-E7z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3Uo-0m-2uk"/>
+                <constraint firstItem="jSj-Sv-44f" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HfR-9m-wxe"/>
+                <constraint firstItem="jSj-Sv-44f" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="JgQ-Ac-yXu"/>
+                <constraint firstItem="Spo-1w-E7z" firstAttribute="top" secondItem="4df-P9-Npz" secondAttribute="bottom" constant="35" id="gj7-cZ-703"/>
+                <constraint firstItem="4df-P9-Npz" firstAttribute="top" secondItem="jSj-Sv-44f" secondAttribute="bottom" constant="25" id="lRG-BK-8J5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon0.jpg" width="220" height="220"/>
+    </resources>
+</document>
